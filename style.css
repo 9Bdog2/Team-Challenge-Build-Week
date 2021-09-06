@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    background-color: #828282;
+}
+
+.left_navbar{
+    background-color: #000000;
+    color: #828282;
+}
+
+.spotify_logo{
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 50%;
+}
+
+.playlist_icon{
+    width: 17px;
+    height: 20px;
+    background: #4b68fc;
+}
+
+.liked_song_icon{
+    width: 17px;
+    height: 20px;
+    background: #d1d7f5;
+}
+
+.user_playlist{
+    overflow: auto;
+    height: 600px;
+}
+
+.text_clamp_1{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.profile_picture{
+    border-radius: 50%;
+}
