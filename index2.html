@@ -27,27 +27,23 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div
-      class="container-fluid position-fixed d-inline-black"
-      style="width: 100%"
-    >
       <div
         class="container-fluid d-inline-block p-0"
-        style="background-color: rgba(0, 0, 0, 0.5); opacity: 1"
-      >
-        <div class="row d-inline-block align-items-start">
-          <!--
-          <div class="col d-inline-block">
-            <img src="queen.jpeg" width="40px" height="40px" />
+        style="position:fixed; left: 0; bottom:0; background-color: rgb(0, 0, 0, 0.5); opacity: 1">
+        <div class="row d-flex align-items-center">
 
-            <span>Another One Bites the Dust - Remastered 2011</span>
+          <div class="col-4 d-flex">
+            <img src="queen.jpeg" width="50px" height="50px" />
+            <div class="d-flex flex-column">
+              <span>Remastered 2011</span>
+              <span>Queen</span>
+            </div>
             <i class="bi bi-heart"></i>
             <i class="bi bi-pip"></i>
-            <span>Queen</span>
-          </div> -->
+          </div>
 
-          <div class="col d-inline-block">
-            <div class="row">
+          <div class="col-5 align-items-center">
+            <div class="row justify-content-center align-items-center">
               <!---Icons-->
               <i
                 class="fa fa-random px-4 hoverMe"
@@ -67,24 +63,25 @@
               ></i>
               <i class="bi bi-arrow-repeat"></i>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
               <!---Song time-->
               <progress
                 max="5"
                 value="2"
-                style="width: 82%; margin-left: -135px"
+                style="width: 82%;"
               ></progress>
             </div>
           </div>
 
-          <div class="col d-inline-block">
-            <div class="row">
-              <i class="bi bi-speaker"></i>
+          <div class="col-3 d-inline-block">
+            <div class="row align-items-center">
+          <!---    
               <i class="bi bi-volume-down"></i>
+           
+              <i class="bi bi-volume-mute"></i> --->
               <i class="bi bi-volume-up"></i>
-              <i class="bi bi-volume-mute"></i>
-
-              <form>
+              <i class="bi bi-speaker"></i>
+             <i class="bi bi-music-note-list"></i>
                 <!---volume slider-->
                 <div class="form-group d-inline-block">
                   <label for="formControlRange"> </label>
@@ -95,15 +92,14 @@
                     id="formControlRange"
                   />
                 </div>
-              </form>
-              <i class="bi bi-music-note-list"></i>
+   
+              
               <i class="bi bi-list-starts px-2"></i>
               <i class="bi bi-arrows-angle-expand"> </i>
             </div>
           </div>
         </div>
       </div>
-    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
