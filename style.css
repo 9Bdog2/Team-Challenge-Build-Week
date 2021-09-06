@@ -98,7 +98,7 @@ input[type="range"] {
   overflow: hidden;
   width: 120px;
   -webkit-appearance: none;
-  background-color: lightgray;
+  background-color: #434343;
   color: #434343;
   border-radius: 40px;
   -webkit-border-radius: 40px;
