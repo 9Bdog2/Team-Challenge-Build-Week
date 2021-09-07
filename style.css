@@ -51,13 +51,20 @@ body{
 
 .good_morning_section{
     background-color: rgb(126, 126, 126);
-    max-width: 200px;
-    margin-right: 15px;
-}
-.good_morning_section_p{
-    align-self: center;
+    width: 280px;
+    max-width: 350px;
 }
 
+.good_morning_section img {
+  margin-right: 0.8rem;
+
+}
+
+.good_morning_section p {
+  color: #ecebe8;
+}
+
+.good_morning_container,
 .recently-played-container,
 .shows-to-try-container {
   display: inline-flex; 
