@@ -66,6 +66,7 @@ body{
 }
 
 .spotify-card {
+  width: 140px;
   max-width: 140px;
   background-color: #363636;
 }
@@ -75,6 +76,19 @@ body{
   object-fit: cover;
   max-height: 120px;
 }
+
+.liked-songs {
+  background: rgb(97,33,215);
+  background: linear-gradient(150deg, rgba(97,33,215,1) 5%, rgba(255,255,255,1)   100%);
+  width: 100%;
+  height: 120px;
+  max-height: 120px;
+}
+.liked-songs .bi-heart-fill {
+  color: white;
+  font-size: 3rem;
+}
+
 .spotify-card h6 {
   color: #ecebe8;
 }
