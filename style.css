@@ -6,6 +6,7 @@ body{
 .left_navbar{
     background-color: #000000;
     color: #828282;
+    max-width: 300px;
 }
 
 .spotify_logo{
@@ -19,17 +20,52 @@ body{
   font-size: larger;
   font-weight:bold;
 }
+.navbar_main_section .active{
+  background-color: grey;
+  color: white;
+  border-radius: 3px;
+}
+
+.navbar_main_section .sidebar_search:hover{
+  color:white;
+  cursor: pointer
+}
+.navbar_main_section .sidebar_home:hover{
+  color:white;
+  cursor: pointer
+}
+.navbar_main_section .sidebar_library:hover{
+  color:white;
+  cursor: pointer
+}
+.navbar_main_section .sidebar_create_playlist:hover{
+  color:white;
+  cursor: pointer
+}
+
 
 .playlist_icon{
-    width: 17px;
-    height: 20px;
-    background: #4b68fc;
+font-size: larger;
+}
+
+.liked_song_icon .bi-heart-fill{
+font-size:small;
+color:lightgrey;
+display:flex;
+
+}
+.navbar_main_section .sidebar_liked_songs:hover{
+  color:white;
+  cursor: pointer
 }
 
 .liked_song_icon{
-    width: 17px;
-    height: 20px;
-    background: #d1d7f5;
+font-size:large;
+background: linear-gradient(135deg,#450af5,#c4efd9);
+border-radius: 2px;
+height: 19.2px;
+width: 19px;
+text-align: justify;
 }
 
 .user_playlist{
