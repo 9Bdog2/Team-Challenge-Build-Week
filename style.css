@@ -43,6 +43,15 @@ body{
     border-radius: 50%;
 }
 
+.good_morning_section{
+    background-color: rgb(126, 126, 126);
+    max-width: 200px;
+    margin-right: 15px;
+}
+.good_morning_section_p{
+    align-self: center;
+}
+
 .play-bar img {
     margin-right: 20px;
   }
