@@ -73,11 +73,14 @@ h3+p {
     background: rgba(126, 126, 126,0.2);
     width: 280px;
     max-width: 350px;
+    border-radius: 3px;
 }
 
 
 .good_morning_section img {
   margin-right: 0.8rem;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 .good_morning_section p {
