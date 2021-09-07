@@ -58,6 +58,38 @@ body{
     align-self: center;
 }
 
+.recently-played-container,
+.shows-to-try-container {
+  display: inline-flex; 
+  flex-wrap: wrap; 
+  gap: 1rem;
+}
+
+.spotify-card {
+  max-width: 140px;
+  background-color: #363636;
+}
+
+.spotify-card img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 120px;
+}
+.spotify-card h6 {
+  color: #ecebe8;
+}
+
+.spotify-card p {
+  font-size: 0.8rem;
+  color: #828282; 
+}
+
+.spotify-card .podcast-img {
+  border-radius: 5px;
+}
+
+
+
 .play-bar img {
     margin-right: 20px;
   }
