@@ -4,6 +4,15 @@ body{
 background: linear-gradient(0deg, rgba(0,0,0,1) 85%, rgba(116,15,51,1) 100%);
 }
 
+h3,h3+p,h6 {
+  color: #ffffff;
+}
+
+h3+p {
+  font-size: 0.9rem;
+}
+
+
 .left_navbar{
     background-color: #000000;
     color: #828282;
@@ -43,6 +52,16 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 85%, rgba(116,15,51,1) 100%);
 
 .text_clamp_2 {
   -webkit-line-clamp: 2;
+}
+
+.arrow_icon {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.avatar-pill {
+  background:#000000;
+  color: white;
 }
 
 
