@@ -54,9 +54,18 @@ h3+p {
   -webkit-line-clamp: 2;
 }
 
+.nav-arrow-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #20202081;
+  border-radius: 50%;
+}
 .arrow_icon {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 
 .avatar-pill {
