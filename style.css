@@ -32,12 +32,18 @@ body{
     height: 600px;
 }
 
-.text_clamp_1{
+.text_clamp_1,
+.text_clamp_2 {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.text_clamp_2 {
+  -webkit-line-clamp: 2;
+}
+
 
 .profile_picture{
     border-radius: 50%;
