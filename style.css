@@ -1,7 +1,17 @@
 body{
     height: 100vh;
-    background-color: #828282;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 85%, rgba(116,15,51,1) 100%);
 }
+
+h3,h3+p,h6 {
+  color: #ffffff;
+}
+
+h3+p {
+  font-size: 0.9rem;
+}
+
 
 .left_navbar{
     background-color: #000000;
@@ -124,18 +134,109 @@ body{
   cursor: pointer;
 }
 
-.text_clamp_1{
+.text_clamp_1,
+.text_clamp_2 {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
+.text_clamp_2 {
+  -webkit-line-clamp: 2;
+}
+
+.nav-arrow-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #20202081;
+  border-radius: 50%;
+}
+.arrow_icon {
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.avatar-pill {
+  background:#000000;
+  color: white;
+}
+
+
 .profile_picture{
     border-radius: 50%;
 }
 
-.play-bar{
+
+.good_morning_section{
+    background: rgba(126, 126, 126,0.2);
+    width: 280px;
+    max-width: 350px;
+    border-radius: 3px;
+}
+
+
+.good_morning_section img {
+  margin-right: 0.8rem;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.good_morning_section p {
+  color: #ecebe8;
+}
+
+.good_morning_container,
+.recently-played-container,
+.shows-to-try-container {
+  display: inline-flex; 
+  flex-wrap: wrap; 
+  gap: 1rem;
+}
+
+.spotify-card {
+  width: 140px;
+  max-width: 140px;
+  background-color: #3636362f;
+}
+
+.spotify-card img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 120px;
+}
+
+.liked-songs {
+  background: rgb(97,33,215);
+  background: linear-gradient(150deg, rgba(97,33,215,1) 5%, rgba(255,255,255,1)   100%);
+  width: 100%;
+  height: 120px;
+  max-height: 120px;
+}
+.liked-songs .bi-heart-fill {
+  color: white;
+  font-size: 3rem;
+}
+
+.spotify-card h6 {
+  color: #ecebe8;
+}
+
+.spotify-card p {
+  font-size: 0.8rem;
+  color: #828282; 
+}
+
+.spotify-card .podcast-img {
+  border-radius: 5px;
+}
+
+
+
+.play-bar {
   height: 5em;
   position:fixed; 
   left: 0; 
@@ -147,6 +248,7 @@ body{
 .play-bar span{
   font-size: 12px;
 }
+
 .play-bar img {
     margin-right: 20px;
   }
