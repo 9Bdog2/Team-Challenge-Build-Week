@@ -541,18 +541,50 @@
     
 
 
-        <button class="open-button" onclick="openForm()">Chat</button>
+        <button class="open-button" onclick="openForm()"><span>Chat</span></button>
 
         <div class="chat-popup" id="myForm">
           <form action="/action_page.php" class="form-container">
-            <h1>Chat</h1>
+          <!---messages start-->
+
+          <div class="container normal norm">
+
+            <p>Hey how's the build week going?</p>
+            <span class="time-right">11:00</span>
+          </div>
+          
+          <div class="container norm darker">
+
+            <p>Hey! not too bad!</p>
+            <span class="time-left">11:01</span>
+          </div>
+          
+          <div class="container norm normal">
+
+            <p>That's good , so are you nearly done?</p>
+            <span class="time-right">11:02</span>
+          </div>
+          
+          <div class="container norm darker">
+            <p>hah! not even close lol</p>
+            <span class="time-left">11:05</span>
+          </div>
+
+
+
+
+
+
+          <!---messages end-->
 
             <label for="msg"><b>Message</b></label>
-            <textarea placeholder="Type message.." name="msg" required></textarea>
-
-            <button type="submit" class="btn">Send</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-          </form>
+            <textarea placeholder="Type here.." name="msg" required></textarea>
+            <div class="d-flex">
+            <button type="submit" id="send-message"class="btn"><i class="bi bi-arrow-right-square"></i></button>
+            
+            </div> 
+            <button type="button" class="btn cancel" onclick="closeForm()"><i class="bi bi-x-square"></i></button>
+        </form>
         </div>
 
         <script>
