@@ -215,7 +215,7 @@ top:-3px;
     border-radius: 3px;
 }
 
-@media (max-width: 1011px) {
+@media (max-width: 1020px) {
   .col-12 {
     width: 100%;
   }
