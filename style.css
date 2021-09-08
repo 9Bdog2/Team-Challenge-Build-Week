@@ -343,10 +343,10 @@ top:-3px;
   
   .play-bar .song-bar .fa {
     color: rgb(92, 91, 91);
-    font-size: 1.5em;
+    font-size: 1em;
   }
   .play-bar .song-bar .bi-arrow-repeat {
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 0 12;
     color: rgb(92, 91, 91);
     font-weight: bolder; 
@@ -431,5 +431,5 @@ overflow: hidden;
   }
   .play-bar .song-bar .fa-play-circle{
     color:white;
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
