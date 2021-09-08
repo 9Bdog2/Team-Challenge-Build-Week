@@ -149,3 +149,22 @@ body{
     background: #ffffff;
     cursor: pointer;
   }
+
+/* Album Page Css */
+.song_aligment{
+  width: 93%;
+}
+.song_container{
+  overflow: auto;
+  height: 400px;
+}
+
+.col-12 hr{
+  background-color: white;
+}
+
+.song_container_background{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.17690826330532217) 0%,
+   rgba(0,0,0,0.5662640056022409) 27%, rgba(0,0,0,0.8519782913165266) 100%);
+}
