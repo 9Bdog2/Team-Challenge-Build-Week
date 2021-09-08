@@ -16,11 +16,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="./style.css">
+    <!-- Flavicon -->
+    <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Spotify Clone</title>
     <style>
       body{
         background: rgb(2,0,36);
         background: linear-gradient(0deg, rgba(2,0,36,1) 43%, #9C367F 100%, rgba(0,212,255,0) 100%);
+        font-family: Montserrat;
       }
     </style>
   </head>
@@ -126,39 +129,106 @@
             <div class="col-12 mt-5 text-white">
               <div class="d-flex" >
                 <img src="https://images-na.ssl-images-amazon.com/images/I/71WVq7VqUkL._SL1260_.jpg" width="200" height="200" alt="">
-                <div style="align-self: end;" class="ml-3">
+                <div  class="ml-3 align-self-end">
                   <h6>Album</h6>
-                  <h2>Bohemian Rhapsody(The Original Soundtrack)</h2>
+                  <h2><b>Bohemian Rhapsody(The Original Soundtrack)</b></h2>
                   <div class="d-flex">
                     <img src="./assets/small_profile_picture.jpg" class="profile_picture" width="25" height="25" alt="">
-                    <h6>Queen</h6>
-                    <p>.2019.22 songs,1hr 19min</p>
+                    <h6 class="ml-1 mr-1">Queen</h6>
+                    <p><span class="mr-1 ml-1">&sdot;</span>2019<span class="mr-1 ml-1 ">&sdot;</span>22 songs, 1hr 19min</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 mt-5">
-              <div class="text-white h3 ">
-                <img src="./assets/spotify_play_btn.png" class="profile_picture" width="50" height="50" alt="">
-                <i class="bi bi-heart"></i>
-                <i class="bi bi-three-dots"></i>
+            <div class="col-12 pl-0 song_container_background mt-4">
+              <div class="col-12 mt-5">
+                <div class="text-white h3 d-flex align-items-center" >
+                  <img src="./assets/spotify_play_btn.jpg" class="profile_picture" width="50" height="50" alt="">
+                  <i class="bi bi-heart ml-3"></i>
+                  <i class="bi bi-three-dots ml-3"></i>
+                </div>
               </div>
-            </div>
-            <div class="col-12">
-              <div class="text-white d-flex ">
-                <p>#</p>
-                <p>Title</p>
-                <i class="bi bi-clock"></i>
+              <div class="col-12">
+                <div class="text-white d-flex justify-content-between" >
+                  <p>#</p>
+                  <p class="song_aligment">Title</p>
+                  <div><i class="bi bi-clock mr-4"></i></div>
+                </div>
+                <hr>
               </div>
-            </div>
-            <div class="col-12">
-              <div class="d-flex text-white" style="justify-content: space-between;;">
-                <p>1</p>
-                <div >
-                  <p>20th Century Fox Hanfare</p>
-                    <p>Queen</p>
-                  </div>
-                <p>0:25</p>                
+              <div class="col-12 song_container" >
+                <div class="d-flex text-white justify-content-between">
+                  <p>1</p>
+                  <div class="song_aligment">
+                    <p class="mb-0">20th Century Fox Hanfare</p>
+                      <p>Queen</p>
+                    </div>
+                  <p>0:25</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>2</p>
+                  <div class="song_aligment">
+                    <p class="mb-0">Somebody to love</p>
+                      <p>Queen</p>
+                    </div>
+                  <p>04:55</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>3</p>
+                  <div class="song_aligment">
+                    <p class="mb-0">Doing All Right - ...Revisited</p>
+                      <p>Queen</p>
+                    </div>
+                  <p>03:16</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>5</p>
+                  <div class="song_aligment">
+                    <p class="mb-0">Killer Queen</p>
+                      <p>Queen</p>
+                    </div>
+                  <p>02:59</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>6</p>
+                  <div class="song_aligment">
+                    <p class="mb-0">Fat Bottomed Girls - Live in Paris</p>
+                      <p>Queen</p>
+                    </div>
+                  <p>04:37</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>7</p>
+                  <div class="song_aligment">
+                    <p class="mb-0">Bohemiam Rhapsody</p>
+                      <p>Queen</p>
+                    </div>
+                  <p>05:54</p>                
+                </div>
+                <div class="d-flex text-white justify-content-between">
+                  <p>8</p>
+                  <div class="song_aligment">
+                    <p class="mb-0">Now I'm Here - Live at The Hammersmith Odeon</p>
+                      <p>Queen</p>
+                    </div>
+                  <p>04:25</p>                
+                </div>
+                <div class="d-flex text-white" style="justify-content: space-between;;">
+                  <p>9</p>
+                  <div class="song_aligment">
+                    <p class="mb-0">Crazy Little Thing Called Love</p>
+                      <p>Queen</p>
+                    </div>
+                  <p>02:43</p>                
+                </div>
+                <div class="d-flex text-white" style="justify-content: space-between;;">
+                  <p>10</p>
+                  <div class="song_aligment">
+                    <p class="mb-0">Crazy Little Thing Called Love II</p>
+                      <p>Queen</p>
+                    </div>
+                  <p>03:43</p>                
+                </div>
               </div>
             </div>
           </div>
@@ -166,6 +236,8 @@
       </div>
     </div>
     <!-- Top navbar -->
+
+    
     
 
       <div class="container-fluid d-inline-block p-0"
