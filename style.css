@@ -163,7 +163,12 @@ top:-3px;
 
 /* MAIN SECTION */
 
+.col {
+  overflow: auto;
+}
+
 .col>.row {
+  min-width: 450px;
   height: 100vh;
   overflow-y: scroll;
 }
@@ -177,10 +182,6 @@ top:-3px;
 }
 
 /* TOP-NAVIGATION, ARROWS AND PROFILE BUTTON */
-
-.top-navbar {
-  
-}
 
 .nav-arrow-bg {
   display: flex;
