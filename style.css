@@ -18,6 +18,10 @@ h3+p {
   font-size: 0.9rem;
 }
 
+.container-fluid {
+  min-width: 650px;
+}
+
 
 /* LEFT-NAVIGATION AREA */
 .col-3 {
@@ -30,6 +34,7 @@ h3+p {
     background-color: #000000;
     color: #828282;
     max-width: 250px;
+    height: 100vh;
     /* position: fixed;
     height: calc(100% - 50px) */
 }
