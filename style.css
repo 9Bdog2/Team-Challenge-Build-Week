@@ -2,9 +2,8 @@
 /* EG. GRADIENT OR BACKGROUND IMAGE */
 body {
   height: 100vh;
-  min-width: 700px;
   background: rgb(0,0,0);
-  overflow:overlay;
+  overflow:hidden;
 }
 
 /* MAIN SECTION TYPOGRAPHY */
@@ -116,7 +115,7 @@ position: relative;
 top:-3px;
 }
 
-/* ----PSEUDO-ELEMENT STYLING HERE WITHOUT USE OF ELEMENT TO USE THESE ON?--- */
+/* PSEUDO-ELEMENT STYLING RELATED TO SCROLL-BAR */
 ::-webkit-scrollbar {
   width: .8em
 }
@@ -132,8 +131,6 @@ top:-3px;
 ::-webkit-scrollbar-track {
   background: transparent;
 }
-
-/* -------------------------------------------------------------------------- */
 
 
 .user_playlist{
@@ -166,6 +163,15 @@ top:-3px;
 
 /* MAIN SECTION */
 
+.col>.row {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.wrapper-main {
+  position: absolute;
+}
+
 .col {
   background: linear-gradient(0deg, rgba(0,0,0,1) 85%, rgba(116,15,51,1) 100%);
 }
@@ -197,23 +203,22 @@ top:-3px;
 
 /* GOOD MORNING SECTION */
 
+
 .good_morning_section {
     background: rgba(126, 126, 126,0.2);
-    width: 300px;
+    width: 350px;
     border-radius: 3px;
 }
 
-@media (max-width: 883px) {
+@media (max-width: 1011px) {
   .col-12 {
     width: 100%;
   }
-
   .good-morning-container {
     width: 100%;
   }
-
   .good_morning_section {
-    width: 100%
+    width: 95%
   }
 
 }
