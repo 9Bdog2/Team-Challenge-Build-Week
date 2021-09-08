@@ -452,5 +452,5 @@ overflow: hidden;
   .song_container_background{
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0.17690826330532217) 0%,
-    rgba(0,0,0,0.5662640056022409) 27%, rgba(0,0,0,0.8519782913165266) 100%);
+    rgba(0,0,0,0.5662640056022409) 20%, rgba(0,0,0,0.8519782913165266) 100%);
   }
