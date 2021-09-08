@@ -2,6 +2,7 @@
 /* EG. GRADIENT OR BACKGROUND IMAGE */
 body {
   height: 100vh;
+  min-width: 700px;
   background: rgb(0,0,0);
   overflow:overlay;
 }
@@ -196,12 +197,27 @@ top:-3px;
 
 /* GOOD MORNING SECTION */
 
-.good_morning_section{
+.good_morning_section {
     background: rgba(126, 126, 126,0.2);
-    width: 280px;
-    max-width: 350px;
+    width: 300px;
     border-radius: 3px;
 }
+
+@media (max-width: 883px) {
+  .col-12 {
+    width: 100%;
+  }
+
+  .good-morning-container {
+    width: 100%;
+  }
+
+  .good_morning_section {
+    width: 100%
+  }
+
+}
+
 
 .good_morning_section img {
   margin-right: 0.8rem;
