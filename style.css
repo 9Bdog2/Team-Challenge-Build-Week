@@ -4,10 +4,7 @@ body {
   height: 100vh;
   background: rgb(0,0,0);
   overflow:hidden;
-}
-body {
   font-family: 'Montserrat';
-  font-weight: 600;
 }
 
 /* MAIN SECTION TYPOGRAPHY */
