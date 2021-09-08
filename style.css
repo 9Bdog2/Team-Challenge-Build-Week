@@ -3,7 +3,6 @@
 body {
   height: 100vh;
   background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 85%, rgba(116,15,51,1) 100%);
   overflow:overlay;
 }
 
@@ -162,6 +161,12 @@ top:-3px;
 
 .text_clamp_2 {
   -webkit-line-clamp: 2;
+}
+
+/* MAIN SECTION */
+
+.col {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 85%, rgba(116,15,51,1) 100%);
 }
 
 /* TOP-NAVIGATION ARROWS AND PROFILE BUTTON */
