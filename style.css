@@ -137,8 +137,7 @@ top:-3px;
 
 .user_playlist{
     overflow: auto;
-    height: 16em;
-    
+    height: calc(100vh - 380px);
 }
 
 .user_playlist p:hover{
