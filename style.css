@@ -138,13 +138,18 @@ top:-3px;
 .user_playlist{
     overflow: auto;
     height: 16em;
-    border-top: 1px solid rgb(100, 100, 100);
+    
 }
 
 .user_playlist p:hover{
   color:white ;
   cursor: pointer
 }
+
+.playlist_border_top {
+  border-top: 1px solid rgb(100, 100, 100);
+}
+
 .download_app_section:hover{
   color: white;
   cursor: pointer;
