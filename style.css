@@ -175,7 +175,7 @@ top:-3px;
 
 .col>.row {
   min-width: 450px;
-  height: 100vh;
+  height: calc(100vh - 80px);
   overflow-y: scroll;
 }
 
