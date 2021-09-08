@@ -1,8 +1,14 @@
-body{
+/* BODY AND MAIN SECTION RELATED PRESETS */
+/* EG. GRADIENT OR BACKGROUND IMAGE */
+body {
   height: 100vh;
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 85%, rgba(116,15,51,1) 100%);
+  overflow:overlay;
 }
+
+/* MAIN SECTION TYPOGRAPHY */
+/* HEADERS AND SUB-HEADERS */
 
 h3,h3+p,h6 {
   color: #ffffff;
@@ -12,7 +18,7 @@ h3+p {
   font-size: 0.9rem;
 }
 
-
+/* LEFT-NAVIGATION AREA */
 .left_navbar{
     background-color: #000000;
     color: #828282;
@@ -98,10 +104,7 @@ position: relative;
 top:-3px;
 }
 
-body{
-  overflow:overlay;
-}
-
+/* ----PSEUDO-ELEMENT STYLING HERE WITHOUT USE OF ELEMENT TO USE THESE ON?--- */
 ::-webkit-scrollbar {
   width: .8em
 }
@@ -115,8 +118,10 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent
+  background: transparent;
 }
+
+/* -------------------------------------------------------------------------- */
 
 
 .user_playlist{
@@ -134,6 +139,7 @@ body{
   cursor: pointer;
 }
 
+/* TYPOGRAPHY - TEXT CLAMP */
 .text_clamp_1,
 .text_clamp_2 {
     display: -webkit-box;
@@ -145,6 +151,8 @@ body{
 .text_clamp_2 {
   -webkit-line-clamp: 2;
 }
+
+/* TOP-NAVIGATION ARROWS AND PROFILE BUTTON */
 
 .nav-arrow-bg {
   display: flex;
@@ -169,7 +177,7 @@ body{
     border-radius: 50%;
 }
 
-
+/* GOOD MORNING SECTION */
 
 .good_morning_section{
     background: rgba(126, 126, 126,0.2);
@@ -177,7 +185,6 @@ body{
     max-width: 350px;
     border-radius: 3px;
 }
-
 
 .good_morning_section img {
   margin-right: 0.8rem;
@@ -189,6 +196,7 @@ body{
   color: #ecebe8;
 }
 
+/* CONTAINER RELATED BASE STYLING FOR SECTIONS */
 .good_morning_container,
 .recently-played-container,
 .shows-to-try-container {
@@ -196,6 +204,8 @@ body{
   flex-wrap: wrap; 
   gap: 1rem;
 }
+
+/* CARD STYLING - USED WITHIN RECENTLY PLAYED AND SHOWS TO TRY SECTION */
 
 .spotify-card {
   width: 140px;
@@ -209,6 +219,17 @@ body{
   max-height: 120px;
 }
 
+.spotify-card h6 {
+  color: #ecebe8;
+}
+
+.spotify-card p {
+  font-size: 0.8rem;
+  color: #828282; 
+}
+
+/* CUSTOM LIKED SONGS CARD */
+
 .liked-songs {
   background: rgb(97,33,215);
   background: linear-gradient(150deg, rgba(97,33,215,1) 5%, rgba(255,255,255,1)   100%);
@@ -221,20 +242,13 @@ body{
   font-size: 3rem;
 }
 
-.spotify-card h6 {
-  color: #ecebe8;
-}
-
-.spotify-card p {
-  font-size: 0.8rem;
-  color: #828282; 
-}
-
+/* IMG CUSTOMIZED FOR SHOWS TO TRY SECTION */
 .spotify-card .podcast-img {
   border-radius: 5px;
 }
 
 
+/* PLAY AREA */
 
 .play-bar {
   height: 5em;
