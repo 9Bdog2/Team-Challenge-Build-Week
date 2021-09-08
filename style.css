@@ -76,7 +76,7 @@ cursor:pointer;
 }
 .navbar_main_section .sidebar_home:hover{
   color:white;
-  cursor: pointer
+  cursor: pointer;
   font-weight: medium;
 }
 .navbar_main_section .sidebar_library:hover{
