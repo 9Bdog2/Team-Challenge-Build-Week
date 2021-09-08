@@ -22,7 +22,7 @@
     <style>
       body{
         background: rgb(2,0,36);
-        background: linear-gradient(0deg, rgba(2,0,36,1) 43%, #9C367F 100%, rgba(0,212,255,0) 100%)!important;
+        background: linear-gradient(0deg, rgba(2,0,36,1) 43%, #9C367F 100%, rgba(0,212,255,0) 100%);
         font-family: Montserrat;
       }
     </style>
@@ -105,25 +105,30 @@
         </div>
         <div class="col-9">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 sticky-top">
               <div class="d-flex justify-content-between mt-3">
-                <div>
-                  <i class="bi bi-arrow-left-circle"></i>
-                  <i class="bi bi-arrow-right-circle"></i>
+                <div class="d-flex">
+                  <div class="nav-arrow-bg mr-2">
+                    <i class="bi arrow_icon bi-chevron-left"></i>
+                  </div>
+                  <div class="nav-arrow-bg">
+                    <i class="bi arrow_icon bi-chevron-right"></i>
+                  </div>
                 </div>
 
-                  <div class="d-flex bg-light rounded-pill">
-                    <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img src="./assets/small_profile_picture.jpg" class="profile_picture" width="25" height="25" alt="">
-                      John Doe
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Homepage</a>
-                        <a class="dropdown-item" href="#">Album Page</a>
-                        <a class="dropdown-item" href="#">Artist Page</a>
-                        <a class="dropdown-item" href="#">Log-in</a>
-                      </div>
-                    </div>
+                <div class="d-flex align-items-center avatar-pill rounded-pill">
+                  <div class="pl-1 mr-1">
+                    <img src="./assets/small_profile_picture.jpg" class="profile_picture" width="25" height="25" alt="">
                   </div>
+                  <div class="dropdown-toggle pr-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      John Döner 'Alle Gemuse' Kebab
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
               </div>
             </div>
             <div class="col-12 mt-5 text-white">
@@ -240,76 +245,80 @@
     
     
 
-      <div class="container-fluid d-inline-block p-0"
-          style="position:fixed; left: 0; bottom:0; background-color:rgb(37, 36, 36); opacity: 1">
-          <div class="row d-flex align-items-center">
+    <div class="container-fluid play-bar d-inline-block p-0">
+      <div class="row d-flex align-items-center">
 
-            <div class="col-4 d-flex">
-              <img src="./assets/queen.jpeg" width="50px" height="50px" />
-              <div class="d-flex flex-column">
-                <span>Remastered 2011</span>
-                <span class="text-muted">Queen</span>
-              </div>
-              <i class="bi bi-heart"></i>
-              <i class="bi bi-pip"></i>
-            </div>
-
-            <div class="col-5 align-items-center">
-              <div class="row justify-content-center align-items-center">
-                <!---Icons-->
-                <i
-                  class="fa fa-random px-4 hoverMe"
-                  style="padding-left: 15px; padding-right: 15px"
-                ></i>
-                <i
-                  class="fa fa-step-backward px-4 hoverMe"
-                  style="padding-left: 15px; padding-right: 15px"
-                ></i>
-                <i
-                  class="fa fa-play-circle px-4 hoverMe"
-                  style="padding-left: 15px; padding-right: 15px"
-                ></i>
-                <i
-                  class="fa fa-step-forward px-4 hoverMe"
-                  style="padding-left: 15px; padding-right: 15px"
-                ></i>
-                <i class="bi bi-arrow-repeat"></i>
-              </div>
-              <div class="row justify-content-center">
-                <!---Song time-->
-                <progress
-                  max="5"
-                  value="2"
-                  style="width: 82%;"
-                ></progress>
-              </div>
-            </div>
-
-            <div class="col-3 d-inline-block">
-              <div class="row align-items-center">
-            <!---    
-                <i class="bi bi-volume-down"></i>
-            
-                <i class="bi bi-volume-mute"></i> --->
-                <i class="bi bi-volume-up"></i>
-                <i class="bi bi-speaker"></i>
-              <i class="bi bi-music-note-list"></i>
-                  <!---volume slider-->
-                  <div class="form-group d-inline-block">
-                    <label for="formControlRange"> </label>
-
-                    <input
-                      type="range"
-                      class="form-control-range"
-                      id="formControlRange"
-                    />
-                  </div>
-                <i class="bi bi-list-starts px-2"></i>
-                <i class="bi bi-arrows-angle-expand"> </i>
-              </div>
-            </div>
+        <div class="col-4 d-flex mt-0">
+          <img src="./assets/queen.jpeg" width="50px" height="50px" />
+          <div class="d-flex align-items-center mt-0">
+          <div class="d-flex flex-column song_info">
+            <span>Another One Bites The Dust Remastered 2011</span>
+            <span class="band_name">Queen</span>
+          </div>
+          <div class="ml-5">
+          <i class="bi bi-heart"></i>
+          <i class="bi bi-pip"></i>
+        </div>
+      </div>
+      </div>
+        <div class="col-5 align-items-center song-bar">
+          <div class="row justify-content-center align-items-center song_bar_icons">
+            <!---Icons-->
+            <i
+              class="fa fa-random px-2"
+              style="padding-left: 15px; padding-right: 15px"
+            ></i>
+            <i
+              class="fa fa-step-backward px-2 "
+              style="padding-left: 15px; padding-right: 15px"
+            ></i>
+            <i
+              class="fa fa-play-circle px-2 play_button"
+              style="padding-left: 15px; padding-right: 15px"
+            ></i>
+            <i
+              class="fa fa-step-forward px-2 "
+              style="padding-left: 15px; padding-right: 15px"
+            ></i>
+            <i class="bi bi-arrow-repeat px-2"></i>
+          </div>
+          <div class="row justify-content-center">
+            <!---Song time-->
+            <progress
+              max="5"
+              value="2"
+              style="width: 82%;"
+            ></progress>
           </div>
         </div>
+
+        <div class="col-3 d-inline-block">
+          <div class="row align-items-center justify-content-end">
+        <!---    
+            <i class="bi bi-volume-down"></i>
+        
+            <i class="bi bi-volume-mute"></i> --->
+           
+   
+          <i class="bi bi-music-note-list"></i>         
+          <i class="bi bi-speaker"></i> 
+          <i class="bi bi-volume-up"></i>
+              <!---volume slider-->
+              <div class="form-group d-inline-block">
+                <label for="formControlRange"> </label>
+
+                <input
+                  type="range"
+                  class="form-control-range"
+                  id="formControlRange"
+                />
+              </div>
+            <i class="bi bi-list-starts px-2"></i>
+            <i class="bi bi-arrows-angle-expand"> </i>
+          </div>
+        </div>
+      </div>
+    </div>
     
 
 
