@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotifour</title>
+    <title>Sign in - Spotify</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,10 +19,9 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
     />
-    <!-- Flavicon -->
-    <link href="../assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
 
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <br />
@@ -36,7 +35,7 @@
         <div class="lg:w-216 md:w-156 w-108 pb-3">
           <a href="" class="flex justify-content-center"
             ><img
-              src="public/img/logo.png"
+              src="assets/logo.png"
               alt="spotify-logo"
               class="w-24 py-8 md:w-32 justify-content-center"
           /></a>
@@ -45,9 +44,9 @@
       <hr />
       <h2
         class="font-bold text-2.5xl tracking-tight text-center"
-        style="font-size: 10px"
+        style="font-size: 12px"
       >
-        <b> To continue,log in in Spotify. </b>
+        To continue,log in in Spotify.
       </h2>
       <div>
         <center>
@@ -55,7 +54,7 @@
             <button
               type="button"
               class="btn btn-primary"
-              style="align-items: center; background-color: rgb(62, 89, 157)"
+              style="align-items: center"
             >
               <i class="bi bi-facebook"></i>
               CONTINUE WITH FACEBOOK
@@ -85,7 +84,7 @@
       </div>
       <center>
         <div class="flex-col justify-center w-11/12 md:w-4/6 lg:w-3/6 mx-auto">
-          <div class="flex-grow mt-1">
+          <div class="flex-row mt-1" name="text1">
             <input
               class="
                 w-full
@@ -97,12 +96,13 @@
                 text-xs
                 focus:outline-none focus:border-gray-900
               "
+              id="input"
               type="text"
               placeholder="Email adress or username."
             />
           </div>
 
-          <div class="flex-grow mt-2">
+          <div class="flex-grow mt-4">
             <input
               class="
                 w-full
@@ -114,6 +114,7 @@
                 text-xs
                 focus:outline-none focus:border-gray-900
               "
+              id="input1"
               type="text"
               placeholder=" Password."
             />
@@ -139,13 +140,16 @@
             ><label
               for="profile_name"
               class="inline-block font-extrabold text-xs my-2 tracking-wider"
-              style="font-size: 10px; opacity: 0.4"
-              >Remember me</label
+              style="font-size: 12px"
+              >Remenber me</label
             >
             <button
               type="button"
+              id="button"
               class="btn btn-success justify-content-center"
-              style="margin-left: 105px; background-color: rgb(71, 184, 80)"
+              onclick="enterSpotify()"
+              data-dismiss="modal"
+              style="margin-left: 95px"
             >
               LOG IN
             </button>
@@ -165,8 +169,8 @@
                 href=""
                 style="
                   text-decoration: none;
-                  color: rgb(71, 184, 80);
-                  font-size: 11px;
+                  color: rgb(57, 214, 97);
+                  font-size: 12px;
                 "
                 >forget your password?</a
               ></span
@@ -180,35 +184,32 @@
               Don't you have a account?
             </h2>
             <div>
-              <button
-                type="button"
-                class="btn btn-outline-secondary py-2"
-                style="width: 22.5%"
-              >
+              <button type="button" class="btn btn-outline-secondary py-2">
                 SIGN UP FOR SPOTIFY
               </button>
             </div>
 
             <hr style="width: 22%" />
             <footer style="width: 22%">
-              <p class="text-muted" style="font-size: 7px; opacity: 0.5">
-                If you don't "log in with facebook" and are not a spotify user,
+              <span class="text-muted" style="font-size: 8px; opacity: 0.5"
+                >If you don't "log in with facebook" and are not a spotify user,
                 you will be registered and your agree to Spotify's<a
                   href="#"
-                  style="text-decoration: none; color: rgb(71, 184, 80)"
+                  style="text-decoration: none; color: rgb(57, 214, 97)"
                   >Terms & Conditions</a
                 >
                 and
                 <a
                   href="#"
-                  style="text-decoration: none; color: rgb(71, 184, 80)"
+                  style="text-decoration: none; color: rgb(57, 214, 97)"
                   >Privacy Policity</a
-                >
-              </p>
+                ></span
+              >
             </footer>
           </div>
         </div>
       </center>
     </form>
+    <script src="index.js"></script>
   </body>
 </html>
