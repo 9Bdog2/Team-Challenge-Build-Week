@@ -5,6 +5,7 @@ body {
   background: rgb(0,0,0);
   overflow:hidden;
   font-family: 'Montserrat';
+  font-weight: 500;
 }
 
 /* MAIN SECTION TYPOGRAPHY */
@@ -38,7 +39,7 @@ h3+p {
 }
 
 .left_nav_icons {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 .left_nav_icons+p {
   font-size: 1rem;
@@ -251,6 +252,7 @@ top:-2px;
 .good_morning_section p {
   color: #ecebe8;
 }
+
 
 /* CONTAINER RELATED BASE STYLING FOR SECTIONS */
 .good_morning_container,
