@@ -14,25 +14,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- Bootstrap Icons -->
+    <!-- External Stylesheet -->
     <link rel="stylesheet" href="./style.css">
     <!-- Flavicon -->
-    <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
-    <title>Spotify Clone</title>
-    <style>
-      body{
-        background: rgb(2,0,36);
-        background: linear-gradient(0deg, rgba(2,0,36,1) 43%, #9C367F 100%, rgba(0,212,255,0) 100%);
-        font-family: Montserrat;
-      }
-    </style>
+    <link href="./assets/small_white_logo.svg" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Spotifour</title>
   </head>
   <body>
     
     
 
-    <div class="container-fluid m-0 p-0">
-      <div class="row no-gutters">
+
+  <div class="container-fluid">
+      <div class="row">
         <div class="col-3 pl-0">
         <!-- LEFT SIDE NAVIGATION -->
           
@@ -46,97 +43,101 @@
             <div class="col-12 p-0">
               <div class="d-flex flex-column navbar_main_section"> 
                 <div class="d-flex align-items-center sidebar_home active mr-2">
-                  <i class="bi bi-house-door mr-2"></i>
+                  <i class="bi bi-house-door left_nav_icons mr-2"></i>
                   <p class="m-1">Home</p>
                 </div>
                 <div class="d-flex align-items-center sidebar_search">
-                  <i class="bi bi-search mr-2"></i>
+                  <i class="bi bi-search left_nav_icons mr-2"></i>
                   <p class="m-0">Search</p>
                 </div>
                 <div class="d-flex align-items-center sidebar_library">
-                  <i class="bi bi-bookshelf mr-2"></i>
+                  <i class="bi bi-bookshelf left_nav_icons mr-2"></i>
                   <p class="m-0">Your Library</p>
                 </div>
                 <div class="d-flex align-items-center mt-4 sidebar_create_playlist">
-                  <div class="playlist_icon" ><i class="bi bi-plus-square-fill mr-2"></i></div>
+                  <div class="playlist_icon" ><i class="bi bi-plus-square-fill left_nav_icons mr-2"></i></div>
                   <p class="m-0">Create Playlist</p>
                 </div>
                 <div class="d-flex align-items-center sidebar_liked_songs">
-                  <div class="liked_song_icon mr-2"><i class="bi bi-heart-fill "></i></div>
+                  <div class="liked_song_icon mr-2"><i class="bi bi-heart-fill left_nav_icons"></i></div>
                   <p class="ml-0 mb-0">Liked songs</p>
                 </div>
               </div>
-              <div><hr></div>
             </div>
-            <div class="col-12 p-0 user_playlist">
-              <div class="d-flex flex-column ">
-                <div class="d-flex text_clamp_1"><p>Funky heavy Bluesy</p></div>
-                <div class="d-flex text_clamp_1"><p>Your Top Songs 2020</p></div>
-                <div class="d-flex text_clamp_1"><p>In Love with you- Erika Badoo</p></div>
-                <div class="d-flex text_clamp_1"><p>This is rod Stewart</p></div>
-                <div class="d-flex text_clamp_1"><p>FRANCHISE ft Young Thug</p></div>
-                <div class="d-flex text_clamp_1"><p>Your Top Songs 2019</p></div>
-                <div class="d-flex text_clamp_1"><p>Palleggio</p></div>
-                <div class="d-flex text_clamp_1"><p>This is Joe Bonamassa</p></div>
-                <div class="d-flex text_clamp_1"><p>Jun 19</p></div>
-                <div class="d-flex text_clamp_1 justify-content-between"><p>Jack 30th Party 2</p><i class="bi bi-people-fill"></i></div>
-                <div class="d-flex text_clamp_1 justify-content-between"><p>Jack 30th Party</p><i class="bi bi-people-fill"></i></div>
-                <div class="d-flex text_clamp_1 justify-content-between"><p>This is Opeth</p><i class="bi bi-people-fill"></i></div>
-                <div class="d-flex text_clamp_1 justify-content-between"><p>Metal Ballads</p><i class="bi bi-people-fill"></i></div>
-                <div class="d-flex text_clamp_1 justify-content-between"><p>New Playliist</p><i class="bi bi-people-fill"></i></div>
-                <div class="d-flex text_clamp_1"><p>Your Top Songs 2018</p></div>
-                <div class="d-flex text_clamp_1"><p>Jazz Classics Blue Note Edition</p></div>
-                <div class="d-flex text_clamp_1"><p>Your Top Songs 2018</p></div>
-                <div class="d-flex text_clamp_1"><p>Jazz Classics Blue Note Edition</p></div>
-                <div class="d-flex text_clamp_1"><p>Your Top Songs 2018</p></div>
-                <div class="d-flex text_clamp_1"><p>Jazz Classics Blue Note Edition</p></div>
+            <div class="col-12 p-0 user_playlist mt-3">
+              <div class="d-flex flex-column playlist_border_top pt-3 pr-2">
+                <div class="d-flex"><p class="text_clamp_1">Funky heavy Bluesy</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2020</p></div>
+                <div class="d-flex"><p class="text_clamp_1">In Love with you- Erika Badoo</p></div>
+                <div class="d-flex"><p class="text_clamp_1">This is rod Stewart</p></div>
+                <div class="d-flex"><p class="text_clamp_1">FRANCHISE ft Young Thug</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2019</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Palleggio</p></div>
+                <div class="d-flex"><p class="text_clamp_1">This is Joe Bonamassa</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jun 19</p></div>
+                <div class="d-flex justify-content-between"><p class="text_clamp_1">Jack 30th Party 2</p><i class="bi bi-people-fill"></i></div>
+                <div class="d-flex justify-content-between"><p class="text_clamp_1">Jack 30th Party</p><i class="bi bi-people-fill"></i></div>
+                <div class="d-flex justify-content-between"><p class="text_clamp_1">This is Opeth</p><i class="bi bi-people-fill"></i></div>
+                <div class="d-flex justify-content-between"><p class="text_clamp_1">Metal Ballads</p><i class="bi bi-people-fill"></i></div>
+                <div class="d-flex justify-content-between"><p class="text_clamp_1">New Playliist</p><i class="bi bi-people-fill"></i></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Your Top Songs 2018</p></div>
+                <div class="d-flex"><p class="text_clamp_1">Jazz Classics Blue Note Edition</p></div>
               </div>
             </div>
-            <div class="d-flex p download_app_section mt-1 mb-1">
+            <div class="d-flex p download_app_section mt-2 mb-2">
               <i class="bi bi-arrow-down-circle mr-2 "></i>
               <p class="m-0">Install App</p>
+            </div>
             </div>
           </div>
         </div>
       </div>
-      
       <!-- LEFT SIDE NAVIGATION END -->
 
       <!-- MAIN SECTION AREA -->
 
-        
-        <!-- Lef side navbar -->
-        <!-- Top navbar -->
-        </div>
-        <div class="col ">
-          <div class="row">
-            <div class="col-12 sticky-top">
-              <div class="d-flex justify-content-between mt-3">
-                <div class="d-flex">
-                  <div class="nav-arrow-bg mr-2">
-                    <i class="bi arrow_icon bi-chevron-left"></i>
-                  </div>
-                  <div class="nav-arrow-bg">
-                    <i class="bi arrow_icon bi-chevron-right"></i>
-                  </div>
-                </div>
-
-                <div class="d-flex align-items-center avatar-pill rounded-pill">
-                  <div class="pl-1 mr-1">
-                    <img src="./assets/small_profile_picture.jpg" class="profile_picture" width="25" height="25" alt="">
-                  </div>
-                  <div class="dropdown-toggle pr-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      John Döner 'Alle Gemuse' Kebab
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+      <div class="col">
+      
+          <div class="row pr-3">
+                <!-- TOP NAVBAR -->
+                <div class="col-12 sticky-top">
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="d-flex">
+                      <div class="nav-arrow-bg mr-2">
+                        <i class="bi arrow_icon bi-chevron-left"></i>
+                      </div>
+                      <div class="nav-arrow-bg">
+                        <i class="bi arrow_icon bi-chevron-right"></i>
+                      </div>
+                    </div>
+    
+                    <div class="d-flex align-items-center avatar-pill rounded-pill">
+                      <div class="pl-1 mr-1">
+                        <img src="./assets/small_profile_picture.jpg" class="profile_picture" width="25" height="25" alt="">
+                      </div>
+                      <div class="dropdown-toggle pr-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          John Döner 'Alle Gemuse' Kebab
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
                         </div>
                     </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-12 mt-5 text-white">
+                <!-- END OF TOP NAVBAR -->
+              <div class="col-12 mt-5 text-white">
               <div class="d-flex" >
                 <img src="https://images-na.ssl-images-amazon.com/images/I/71WVq7VqUkL._SL1260_.jpg" width="200" height="200" alt="">
                 <div  class="ml-3 align-self-end">
@@ -245,94 +246,86 @@
         </div>
       </div>
     </div>
-    <!-- Top navbar -->
-
-
-    
-    
-
-    <div class="container-fluid play-bar d-inline-block p-0">
-      <div class="row d-flex align-items-center">
-
-        <div class="col-4 d-flex mt-0">
-          <img src="./assets/queen.jpeg" width="50px" height="50px" />
-          <div class="d-flex align-items-center mt-0">
-          <div class="d-flex flex-column song_info">
-            <span>Another One Bites The Dust Remastered 2011</span>
-            <span class="band_name">Queen</span>
           </div>
-          <div class="ml-5">
-          <i class="bi bi-heart"></i>
-          <i class="bi bi-pip"></i>
-        </div>
-      </div>
-      </div>
-        <div class="col-5 align-items-center song-bar">
-          <div class="row justify-content-center align-items-center song_bar_icons">
-            <!---Icons-->
-            <i
-              class="fa fa-random px-2"
-              style="padding-left: 15px; padding-right: 15px"
-            ></i>
-            <i
-              class="fa fa-step-backward px-2 "
-              style="padding-left: 15px; padding-right: 15px"
-            ></i>
-            <i
-              class="fa fa-play-circle px-2 play_button"
-              style="padding-left: 15px; padding-right: 15px"
-            ></i>
-            <i
-              class="fa fa-step-forward px-2 "
-              style="padding-left: 15px; padding-right: 15px"
-            ></i>
-            <i class="bi bi-arrow-repeat px-2"></i>
-          </div>
-          <div class="row justify-content-center">
-            <!---Song time-->
-            <progress
-              max="5"
-              value="2"
-              style="width: 82%;"
-            ></progress>
-          </div>
-        </div>
-
-        <div class="col-3 d-inline-block">
-          <div class="row align-items-center justify-content-end">
-        <!---    
-            <i class="bi bi-volume-down"></i>
-        
-            <i class="bi bi-volume-mute"></i> --->
-           
-   
-          <i class="bi bi-music-note-list"></i>         
-          <i class="bi bi-speaker"></i> 
-          <i class="bi bi-volume-up"></i>
-              <!---volume slider-->
-              <div class="form-group d-inline-block">
-                <label for="formControlRange"> </label>
-
-                <input
-                  type="range"
-                  class="form-control-range"
-                  id="formControlRange"
-                />
-              </div>
-            <i class="bi bi-list-starts px-2"></i>
-            <i class="bi bi-arrows-angle-expand"> </i>
-          </div>
-        </div>
       </div>
     </div>
+    <!-- MAIN SECTION END -->
+      </div>
+    </div>
+
+      <div class="container-fluid play-bar d-inline-block p-0">
+          <div class="row d-flex align-items-center">
+
+            <div class="col-4 d-flex mt-0">
+              <img src="./assets/queen.jpeg" width="50px" height="50px" />
+              <div class="d-flex align-items-center mt-0">
+              <div class="d-flex flex-column song_info">
+                <span>Another One Bites The Dust Remastered 2011</span>
+                <span class="band_name">Queen</span>
+              </div>
+              <div class="ml-5">
+              <i class="bi bi-heart"></i>
+              <i class="bi bi-pip"></i>
+            </div>
+          </div>
+          </div>
+            <div class="col-5 align-items-center song-bar">
+              <div class="row justify-content-center align-items-center song_bar_icons">
+                <!---Icons-->
+                <i
+                  class="fa fa-random px-2"
+                  style="padding-left: 15px; padding-right: 15px"
+                ></i>
+                <i
+                  class="fa fa-step-backward px-2 "
+                  style="padding-left: 15px; padding-right: 15px"
+                ></i>
+                <i
+                  class="fa fa-play-circle px-2 play_button"
+                  style="padding-left: 15px; padding-right: 15px"
+                ></i>
+                <i
+                  class="fa fa-step-forward px-2 "
+                  style="padding-left: 15px; padding-right: 15px"
+                ></i>
+                <i class="bi bi-arrow-repeat px-2"></i>
+              </div>
+              <div class="row justify-content-center">
+                <!---Song time-->
+                <progress
+                  max="5"
+                  value="2"
+                  style="width: 82%;"
+                ></progress>
+              </div>
+            </div>
+
+            <div class="col-3 d-inline-block">
+              <div class="row align-items-center justify-content-end">
+            <!---    
+                <i class="bi bi-volume-down"></i>
+            
+                <i class="bi bi-volume-mute"></i> --->
+              <i class="bi bi-music-note-list"></i>         
+              <i class="bi bi-speaker"></i> 
+              <i class="bi bi-volume-up"></i>
+                  <!---volume slider-->
+                  <div class="form-group d-inline-block">
+                    <label for="formControlRange"> </label>
+
+                    <input
+                      type="range"
+                      class="form-control-range"
+                      id="formControlRange"
+                    />
+                  </div>
+                <i class="bi bi-list-starts px-2"></i>
+                <i class="bi bi-arrows-angle-expand"> </i>
+              </div>
+            </div>
+          </div>
+        </div>
     
-
-
-
-
-
-
-
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
