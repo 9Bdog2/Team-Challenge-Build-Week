@@ -451,6 +451,10 @@ overflow: hidden;
   }
 
 
+
+  /* Chat box styling starts*/
+
+
   /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
   color: white;
@@ -625,3 +629,5 @@ overflow: hidden;
  padding-bottom: 10px;
   font-weight: bold;
 }
+
+  /* Chat box styling ends*/
