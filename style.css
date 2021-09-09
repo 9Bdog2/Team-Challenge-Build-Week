@@ -110,8 +110,19 @@ body{
 }
 
 
-
-.play-bar img {
+.play-bar {
+  height: 6rem;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  bottom: 0;
+  background-color: rgb(80, 80, 80);
+  opacity: 1;
+  z-index: 6;
+}
+.play-bar span {
+  font-size: 12px;
+}.play-bar img {
     margin-right: 20px;
   }
   .play-bar .d-flex {
