@@ -38,7 +38,7 @@ h3+p {
 }
 
 .left_nav_icons {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 .left_nav_icons+p {
   font-size: 1rem;
@@ -111,17 +111,17 @@ font-size: larger;
 .liked_song_icon {
 background: linear-gradient(135deg,#450af5,#c4efd9);
 border-radius: 2px;
-height: 20px;
-width: 20.81px;
+height: 25px;
+width: 25.61px;
 text-align: center;
 position: relative;
 }
 
 .liked_song_icon .bi-heart-fill{
-font-size:small;
+font-size: 0.9rem;
 color:lightgrey;
 position: relative;
-top:-2px;
+top: 1px;
 }
 
 /* PSEUDO-ELEMENT STYLING RELATED TO SCROLL-BAR */
