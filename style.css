@@ -253,6 +253,12 @@ top:-2px;
   color: #ecebe8;
 }
 
+div.good_morning_section:hover{
+  background: rgb(54,54,54);
+  background: linear-gradient(90deg, rgba(54,54,54,1) 19%, rgba(93,93,93,1) 30%, rgba(97,97,97,1) 100%);
+  cursor: pointer;
+}
+
 
 /* CONTAINER RELATED BASE STYLING FOR SECTIONS */
 .good_morning_container,
