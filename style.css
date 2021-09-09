@@ -291,6 +291,13 @@ div.good_morning_section:hover{
   font-size: 0.8rem;
   color: #828282; 
 }
+.spotify-card:hover{
+  cursor: pointer;
+  background-color:rgb(34, 34, 34);
+}
+.spotify-card{
+  transition-duration: 1s;
+}
 
 /* CUSTOM LIKED SONGS CARD */
 
