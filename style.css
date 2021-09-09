@@ -75,19 +75,33 @@ cursor:pointer;
   top: -0.8rem;
   left: 1px;
 }
-
+.sidebar_search{
+  transition-duration: 0.5s;
+}
 .navbar_main_section .sidebar_search:hover{
   color:white;
   cursor: pointer
+}
+.sidebar_home{
+  transition-duration: 0.5s;
+
 }
 .navbar_main_section .sidebar_home:hover{
   color:white;
   cursor: pointer;
   font-weight: medium;
 }
+
+.sidebar_library{
+  transition-duration: 0.5s;
+}
+
 .navbar_main_section .sidebar_library:hover{
   color:white;
   cursor: pointer
+}
+.sidebar_create_playlist{
+  transition-duration: 0.5s;
 }
 .navbar_main_section .sidebar_create_playlist:hover{
   color:white;
@@ -155,6 +169,9 @@ top: 1px;
 
 .playlist_border_top {
   border-top: 1px solid rgb(100, 100, 100);
+}
+.download_app_section{
+  transition-duration: 0.5s;
 }
 
 .download_app_section:hover{
@@ -227,6 +244,7 @@ top: 1px;
     background: rgba(126, 126, 126,0.2);
     width: 350px;
     border-radius: 3px;
+    transition-duration: 0.6s;
 }
 
 @media (max-width: 1020px) {
@@ -254,8 +272,7 @@ top: 1px;
 }
 
 div.good_morning_section:hover{
-  background: rgb(54,54,54);
-  background: linear-gradient(90deg, rgba(54,54,54,1) 19%, rgba(93,93,93,1) 30%, rgba(97,97,97,1) 100%);
+  background: rgb(47,47,47);
   cursor: pointer;
 }
 
@@ -293,10 +310,10 @@ div.good_morning_section:hover{
 }
 .spotify-card:hover{
   cursor: pointer;
-  background-color:rgb(34, 34, 34);
+  background-color:rgb(47, 47, 47);
 }
 .spotify-card{
-  transition-duration: 1s;
+  transition-duration: 0.6s;
 }
 
 /* CUSTOM LIKED SONGS CARD */
