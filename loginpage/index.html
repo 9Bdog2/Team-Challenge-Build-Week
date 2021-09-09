@@ -19,9 +19,9 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="icon" href="public/img/favicon.png" type="image/png" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <br />
@@ -35,7 +35,7 @@
         <div class="lg:w-216 md:w-156 w-108 pb-3">
           <a href="" class="flex justify-content-center"
             ><img
-              src="assets/logo.png"
+              src="public/img/logo.png"
               alt="spotify-logo"
               class="w-24 py-8 md:w-32 justify-content-center"
           /></a>
@@ -84,7 +84,7 @@
       </div>
       <center>
         <div class="flex-col justify-center w-11/12 md:w-4/6 lg:w-3/6 mx-auto">
-          <div class="flex-row mt-1" name="text1">
+          <div class="flex-grow mt-1">
             <input
               class="
                 w-full
@@ -96,7 +96,6 @@
                 text-xs
                 focus:outline-none focus:border-gray-900
               "
-              id="input"
               type="text"
               placeholder="Email adress or username."
             />
@@ -114,7 +113,6 @@
                 text-xs
                 focus:outline-none focus:border-gray-900
               "
-              id="input1"
               type="text"
               placeholder=" Password."
             />
@@ -145,10 +143,7 @@
             >
             <button
               type="button"
-              id="button"
               class="btn btn-success justify-content-center"
-              onclick="enterSpotify()"
-              data-dismiss="modal"
               style="margin-left: 95px"
             >
               LOG IN
@@ -210,6 +205,5 @@
         </div>
       </center>
     </form>
-    <script src="index.js"></script>
   </body>
 </html>
