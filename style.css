@@ -448,7 +448,7 @@ overflow: hidden;
   }
   .song_container{
     overflow: auto;
-    height: 400px;
+    
   }
 
   .col-12 hr{
