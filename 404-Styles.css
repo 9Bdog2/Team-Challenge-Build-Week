@@ -1,0 +1,29 @@
+img.clouds{
+    max-width: 200px ;
+    max-height: 200px;
+    position: relative;
+    display: flex;
+
+}
+
+img .right{
+    position: relative;
+
+}
+.left{
+    position: absolute;
+    left: 0;
+}
+
+span{
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 500%;
+}
+p{
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 200%;
+}
