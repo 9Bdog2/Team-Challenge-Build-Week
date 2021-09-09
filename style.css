@@ -112,8 +112,8 @@ font-size: larger;
 .liked_song_icon {
 background: linear-gradient(135deg,#450af5,#c4efd9);
 border-radius: 2px;
-height: 20px;
-width: 20.81px;
+height: 25px;
+width: 25.61px;
 text-align: center;
 position: relative;
 }
@@ -122,7 +122,7 @@ position: relative;
 font-size:small;
 color:lightgrey;
 position: relative;
-top:-2px;
+top: 1px;
 }
 
 /* PSEUDO-ELEMENT STYLING RELATED TO SCROLL-BAR */
@@ -145,7 +145,7 @@ top:-2px;
 
 .user_playlist{
     overflow: auto;
-    height: calc(100vh - 390px);
+    height: calc(100vh - 428px);
 }
 
 .user_playlist p:hover{
