@@ -570,7 +570,7 @@ overflow: hidden;
 
 .odds {
   border: 2px solid #dedede;
-  background-color: #464646;
+  background-color: #747372;
 
 }
 
@@ -583,7 +583,7 @@ overflow: hidden;
 
 .evens {
   border-color: rgb(83, 83, 83);
-  background-color: rgb(95, 95, 95);
+  background-color:#807455;
 }
 
 .row .evens::after {
@@ -598,12 +598,14 @@ overflow: hidden;
 
 .time-right {
   float: right;
-  color: #aaa;
+  color: white;
+  text-decoration: underline;
 }
 
 .time-left {
   float: left;
-  color: #999;
+  color: white;
+  text-decoration: underline;
 }
 
 .chat-history{
