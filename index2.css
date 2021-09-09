@@ -345,7 +345,10 @@ hr {
   margin-left: -10px;
 }
 .icon .btn-outline-secondary {
-  margin-top: -20px;
+  margin-top: 0px;
+}
+.accordion-body .btn {
+  height: 30px;
 }
 .play-bar {
   height: 6rem;
