@@ -35,8 +35,13 @@ h3+p {
     color: #828282;
     max-width: 250px;
     height: 100vh;
-    /* position: fixed;
-    height: calc(100% - 50px) */
+}
+
+.left_nav_icons {
+  font-size: 1.3rem;
+}
+.left_nav_icons+p {
+  font-size: 1rem;
 }
 
 .spotify_logo{
@@ -63,8 +68,11 @@ cursor:pointer;
   color: white;
   border-radius: 3px;
 }
-.spotify_logo_section sup{
+.spotify_logo_section sup {
   font-size: small;
+  position: relative;
+  top: -0.8rem;
+  left: 1px;
 }
 
 .navbar_main_section .sidebar_search:hover{
@@ -100,12 +108,11 @@ font-size: larger;
   cursor: pointer
 }
 
-.liked_song_icon{
-font-size:large;
+.liked_song_icon {
 background: linear-gradient(135deg,#450af5,#c4efd9);
 border-radius: 2px;
-height: 19.2px;
-width: 19px;
+height: 20px;
+width: 20.81px;
 text-align: center;
 position: relative;
 }
@@ -114,7 +121,7 @@ position: relative;
 font-size:small;
 color:lightgrey;
 position: relative;
-top:-3px;
+top:-2px;
 }
 
 /* PSEUDO-ELEMENT STYLING RELATED TO SCROLL-BAR */
@@ -137,7 +144,7 @@ top:-3px;
 
 .user_playlist{
     overflow: auto;
-    height: calc(100vh - 380px);
+    height: calc(100vh - 390px);
 }
 
 .user_playlist p:hover{
