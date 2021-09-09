@@ -456,7 +456,6 @@ overflow: hidden;
   }
   .song_container{
     overflow: auto;
-    
   }
 
   .col-12 hr{
@@ -467,4 +466,44 @@ overflow: hidden;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0.17690826330532217) 0%,
     rgba(0,0,0,0.5662640056022409) 20%, rgba(0,0,0,0.8519782913165266) 100%);
+  }
+
+  .album_image:hover{
+    animation: magnify 5s infinite;
+  }
+
+  .album_title:hover{
+    color: #3b1539;
+  }
+
+  .album_icons:hover{
+    color: #575757;
+  }
+  .songs:hover{
+    animation: pulse 5s infinite;
+  }
+
+  .play_logo:hover{
+    height: 51px;
+    width: 51px;
+  }
+
+  @keyframes pulse {
+    0% {
+      background-color: #090316;
+    }
+    100% {
+      background-color: #e4e2e2;
+    }
+  }
+
+  @keyframes magnify {
+    0% {
+      width: 200px;
+    height: 200px;
+    }
+    100% {
+      width: 250px;
+    height: 250px;
+    }
   }
