@@ -482,6 +482,7 @@ overflow: hidden;
 /* Add styles to the form container */
 .form-container {
   max-width: 300px;
+  max-height: 400px;
   padding: 0px;
   background-color: rgba(44, 44, 44, 0.795);
   border: 0 solid transparent;
@@ -563,7 +564,7 @@ overflow: hidden;
 
 
 
-.container .norm {
+.container .odds {
   border: 2px solid #dedede;
   background-color: #464646;
   border-radius: 5px;
@@ -571,7 +572,7 @@ overflow: hidden;
   margin: 10px 0;
 }
 
-.darker {
+.evens {
   border-color: rgb(83, 83, 83);
   background-color: rgb(95, 95, 95);
 }
@@ -604,4 +605,9 @@ overflow: hidden;
 .time-left {
   float: left;
   color: #999;
+}
+
+.chat-history{
+  max-height: 375px;
+  overflow-y: scroll;
 }
