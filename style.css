@@ -475,7 +475,7 @@ overflow: hidden;
   position: fixed;
   bottom: 100px;
   right: 15px;
-  border: 3px solid #f1f1f1;
+  border: 3px solid #158d3f;
   z-index: 9;
   border-radius: 2%;
 }
@@ -485,9 +485,11 @@ overflow: hidden;
   max-width: 400px;
   max-height: 400px;
   padding: 0px;
-  background-color: rgba(44, 44, 44, 0.795);
-  border: 0 solid transparent;
+  background-color: rgba(109, 108, 108, 0.795);
+
   color: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
 }
 
@@ -566,9 +568,13 @@ overflow: hidden;
 
 
 
-.row .odds {
+.odds {
   border: 2px solid #dedede;
   background-color: #464646;
+
+}
+
+.row {
   border-radius: 5px;
   padding: 10px;
   margin: 5px 0;
@@ -605,6 +611,7 @@ overflow: hidden;
   overflow-y: scroll;
   width: 100%;
   overflow-x: hidden;
+  background-color: rgb(216, 216, 216);
 }
 .chat-head{
   text-align: center;
@@ -613,6 +620,6 @@ overflow: hidden;
   background-color: #1DB954;
   position: relative;
   top:0;
-  margin-bottom: 5px;
+ padding-bottom: 10px;
   font-weight: bold;
 }
