@@ -590,9 +590,9 @@
 
           <!---messages end-->
 
-            <textarea placeholder="Type here.." name="msg" required></textarea>
+            <textarea placeholder="Type here.." name="msg" id="textMessageBox" required></textarea>
             <div class="d-flex">
-            <button type="submit" id="send-message"class="btn"><i class="bi bi-arrow-right-square"></i></button>
+            <button id="send-message" type="button" class="btn" onclick="sendMessage()"><i class="bi bi-arrow-right-square"></i></button>
             
             </div> 
             <button type="button" class="btn cancel" onclick="closeForm()"><i class="bi bi-x-square"></i></button>
@@ -607,7 +607,47 @@
         function closeForm() {
           document.getElementById("myForm").style.display = "none";
         }
-        </script>
+
+        function sendMessage() {
+      
+
+        let newDivRow = document.createElement("div");
+        newDivRow.classList.add("row");
+        newDivRow.classList.add("odds");
+
+        let newMessageArea = document.createElement("div");
+
+
+        newMessageArea.classList.add("col-10");
+        let messageText = document.createElement("p");
+        let messageTime = document.createElement("span");
+
+
+        let newAvatar = document.createElement("div");
+        newAvatar.classList.add("col-2");
+        newAvatar.classList.add("align-items-center");
+        newAvatar.classList.add("d-flex");
+        newAvatar.classList.add("px-0");
+
+        let newImageNode = document.createElement("img");
+
+        newImageNode.setAttribute("src", "assets/one-punch-man-ok.jpeg");
+        newImageNode.setAttribute("width", "40");
+        newImageNode.setAttribute("height","40");
+        newImageNode.setAttribute("style","border-radius:50%")
+        let currentMessage = document.getElementById("textMessageBox").value;
+        messageText.innerHTML = currentMessage;
+        messageTime.innerHTML = "now";
+        newMessageArea.appendChild(messageText);
+        newMessageArea.appendChild(messageTime);
+        newDivRow.appendChild(newMessageArea);
+        newAvatar.appendChild(newImageNode);
+        newDivRow.appendChild(newAvatar);
+        document.querySelector("div.container.chat-history").appendChild(newDivRow)
+                }
+                </script>
+
+
 
 
 
