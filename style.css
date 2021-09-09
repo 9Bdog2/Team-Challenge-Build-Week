@@ -5,6 +5,7 @@ body {
   background: rgb(0,0,0);
   overflow:hidden;
   font-family: 'Montserrat';
+  font-weight: 500;
 }
 
 /* MAIN SECTION TYPOGRAPHY */
@@ -111,17 +112,17 @@ font-size: larger;
 .liked_song_icon {
 background: linear-gradient(135deg,#450af5,#c4efd9);
 border-radius: 2px;
-height: 25px;
-width: 25.61px;
+height: 20px;
+width: 20.81px;
 text-align: center;
 position: relative;
 }
 
 .liked_song_icon .bi-heart-fill{
-font-size: 0.9rem;
+font-size:small;
 color:lightgrey;
 position: relative;
-top: 1px;
+top:-2px;
 }
 
 /* PSEUDO-ELEMENT STYLING RELATED TO SCROLL-BAR */
@@ -144,7 +145,7 @@ top: 1px;
 
 .user_playlist{
     overflow: auto;
-    height: calc(100vh - 427px);
+    height: calc(100vh - 390px);
 }
 
 .user_playlist p:hover{
@@ -251,6 +252,7 @@ top: 1px;
 .good_morning_section p {
   color: #ecebe8;
 }
+
 
 /* CONTAINER RELATED BASE STYLING FOR SECTIONS */
 .good_morning_container,
