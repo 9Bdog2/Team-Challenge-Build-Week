@@ -165,6 +165,7 @@
                   <img src="./assets/spotify_play_btn.jpg" class="profile_picture play_logo" width="50" height="50" alt="">
                   <i class="bi bi-heart ml-3 album_icons " ></i>
                   <i class="bi bi-three-dots ml-3 album_icons"></i>
+                  <button class="btn-info ml-5" onclick="toggleMode()">Toggle mode</button>
                 </div>
               </div>
               <div class="col-12">
@@ -416,6 +417,11 @@
         }, 1000);
 
       /* ------------------------------ */
+
+      function toggleMode() {
+       var element = document.querySelector(".song_container_background");
+       element.classList.toggle("dark-mode");
+      }
 
     </script>
   </body>
