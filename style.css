@@ -673,7 +673,14 @@ overflow: hidden;
   
   }
   
-  .row {
+  .row .odds{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  .row .evens{
     border-radius: 5px;
     padding: 10px;
     margin: 5px 0;
