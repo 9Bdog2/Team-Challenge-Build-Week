@@ -136,3 +136,6 @@ p{
   .pushable:focus:not(:focus-visible) {
     outline: none;
   }
+  div .stefano{
+    border-radius: 20% !important;
+  }
