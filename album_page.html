@@ -165,6 +165,7 @@
                   <img src="./assets/spotify_play_btn.jpg" class="profile_picture play_logo" width="50" height="50" alt="">
                   <i class="bi bi-heart ml-3 album_icons " ></i>
                   <i class="bi bi-three-dots ml-3 album_icons"></i>
+                  <div id="div1" class="fa"></div>
                 </div>
               </div>
               <div class="col-12">
@@ -367,6 +368,20 @@
       function myFunction(x) {
          x.classList.toggle("fa-thumbs-down");
       }
+
+      function hourglass() {
+      var a;
+      a = document.getElementById("div1");
+      a.innerHTML = "&#xf251;";
+      setTimeout(function () {
+          a.innerHTML = "&#xf252;";
+        }, 1000);
+      setTimeout(function () {
+          a.innerHTML = "&#xf253;";
+        }, 2000);
+        }
+        hourglass();
+        setInterval(hourglass, 3000);
     </script>
   </body>
 </html>
