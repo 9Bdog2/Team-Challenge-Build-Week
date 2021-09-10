@@ -139,3 +139,11 @@ p{
   div .stefano{
     border-radius: 20% !important;
   }
+
+
+  .meme-title{
+      font-size: large;
+      font-weight: 600;
+      margin-bottom: 0;
+      margin-top: 10px;
+     }
