@@ -350,55 +350,63 @@
             </div>
           </div>
         </div>
+        <button class="open-button" onclick="openForm()"><span>Chat</span></button>
 
-                  <!---messages start-->
-                  <div class="container chat-history">
-                    <div class="chat-log-contain ">
-                
-                    <div class="row  odds">
-                      <div class="col-19 align-items-center indent-left-1"><p>Hey how's the build week going?</p>
-                        <span class="time-right">11:00</span></div>
-                          <div class="col-2 d-flex align-items-center pr-0"><img src="assets/one-punch-man-ok.jpeg" width="40px" height="40px" style="border-radius:50%" > </div>
-                    </div>
-                    
-                    <div class="row evens">
-                      <div class="col-2 d-flex align-items-center px-0"><img src="assets/Bogdan.png" width="40px" style="border-radius:50%" > </div>
-                     <div class="col-10"><p>Hey! not too bad!</p>
-                      <span class="time-left">11:01</span></div>
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <div class="container chat-head">
+                <p>Live-Message</p>
+            </div>
+
+
+          <!---messages start-->
+        <div class="container chat-history">
+          <div class="chat-log-contain ">
+      
+          <div class="row  odds">
+            <div class="col-19 align-items-center indent-left-1"><p>Hey how's the build week going?</p>
+              <span class="time-right">11:00</span></div>
+                <div class="col-2 d-flex align-items-center pr-0"><img src="assets/one-punch-man-ok.jpeg" width="40px" height="40px" style="border-radius:50%" > </div>
+          </div>
           
-                    </div>
-                    
-                    <div class="row odds">
+          <div class="row evens">
+            <div class="col-2 d-flex align-items-center px-0"><img src="assets/Bogdan.png" width="40px" style="border-radius:50%" > </div>
+           <div class="col-10"><p>Hey! not too bad!</p>
+            <span class="time-left">11:01</span></div>
+
+          </div>
           
-                     <div class="col-10"><p>That's good , so are you nearly done?</p>
-                    <span class="time-right">11:01</span></div>
-                      <div class="col-2 d-flex align-items-center px-0"><img src="assets/one-punch-man-ok.jpeg" width="40px" height="40px" style="border-radius:50%" > </div>
-                    </div>
-                    
-                    <div class="row justify-content-center align-items-center evens">
-                      <div class="col-2 d-flex align-items-center px-0"><img src="assets/Bogdan.png" width="40px" style="border-radius:50%" > </div>
-                     <div class="col-10"><p>hah! not even close lol</p>
-                      <span class="time-left">11:05</span></div>
-                     
-                    </div>
-                  </div>
-                </div>
+          <div class="row odds">
+
+           <div class="col-10"><p>That's good , so are you nearly done?</p>
+          <span class="time-right">11:01</span></div>
+            <div class="col-2 d-flex align-items-center px-0"><img src="assets/one-punch-man-ok.jpeg" width="40px" height="40px" style="border-radius:50%" > </div>
+          </div>
           
-          
-          
-          
-          
-          
-                    <!---messages end-->
-          
-                      <textarea placeholder="Type here.." name="msg" id="textMessageBox" required></textarea>
-                      <div class="d-flex">
-                      <button id="send-message" type="button" class="btn" onclick="sendMessage()"><i class="bi bi-arrow-right-square"></i></button>
-                      
-                      </div> 
-                      <button type="button" class="btn cancel" onclick="closeForm()"><i class="bi bi-x-square"></i></button>
-                  </form>
-                  </div>
+          <div class="row justify-content-center align-items-center evens">
+            <div class="col-2 d-flex align-items-center px-0"><img src="assets/Bogdan.png" width="40px" style="border-radius:50%" > </div>
+           <div class="col-10"><p>hah! not even close lol</p>
+            <span class="time-left">11:05</span></div>
+           
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+          <!---messages end-->
+
+            <textarea placeholder="Type here.." name="msg" id="textMessageBox" required></textarea>
+            <div class="d-flex">
+            <button id="send-message" type="button" class="btn" onclick="sendMessage()"><i class="bi bi-arrow-right-square"></i></button>
+            
+            </div> 
+            <button type="button" class="btn cancel" onclick="closeForm()"><i class="bi bi-x-square"></i></button>
+        </form>
+        </div>
                   <!---chat box functions-->
                   <script>
                   function openForm() {
