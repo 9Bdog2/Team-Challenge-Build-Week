@@ -150,7 +150,7 @@
                 <img src="https://images-na.ssl-images-amazon.com/images/I/71WVq7VqUkL._SL1260_.jpg" class="album_image" width="200" height="200" alt="">
                 <div  class="ml-3 align-self-end">
                   <h6 class="album_title">Album</h6>
-                  <h2 class="album_title"><b>Bohemian Rhapsody(The Original Soundtrack)</b><p id="demo"></p></h2>
+                  <h2 class="album_title "><b>Bohemian Rhapsody(The Original Soundtrack)</b><p id="demo"></p></h2>
                   <div class="d-flex">
                     <img src="./assets/small_profile_picture.jpg" class="profile_picture" width="25" height="25" alt="">
                     <h6 class="ml-1 mr-1 album_title">Queen</h6>
@@ -165,7 +165,7 @@
                   <img src="./assets/spotify_play_btn.jpg" class="profile_picture play_logo" width="50" height="50" alt="">
                   <i class="bi bi-heart ml-3 album_icons " ></i>
                   <i class="bi bi-three-dots ml-3 album_icons"></i>
-                  <button class="btn-info ml-5" onclick="toggleMode()">Toggle mode</button>
+                  <button class="btn-info ml-5" style="font-size: small;" onclick="toggleMode()">Toggle mode</button>
                 </div>
               </div>
               <div class="col-12">
@@ -181,8 +181,7 @@
                   <p>1</p>
                   <div class="song_aligment">
                     <p class="mb-0 songs">20th Century Fox Hanfare <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></p>
-                      <p class="songs">Queen </p>
-                      
+                      <p class="songs">Queen </p>  
                     </div>
                   <p>0:25</p>                
                 </div>
@@ -419,9 +418,12 @@
       /* ------------------------------ */
 
       function toggleMode() {
-       var element = document.querySelector(".song_container_background");
-       element.classList.toggle("dark-mode");
+       let element = document.querySelector(".song_container_background")
+       element.classList.toggle("dark-mode")
       }
+
+      /* ------------------------------ */
+
 
     </script>
   </body>
