@@ -508,8 +508,7 @@ overflow: hidden;
   }
 
   .play_logo:hover{
-    height: 51px;
-    width: 51px;
+    background-image:url("./assets/spotify_play_btn_hovered.jpg");
   }
 
   @keyframes pulse {
