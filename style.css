@@ -312,7 +312,7 @@ div.good_morning_section:hover{
 .spotify-card:hover{
   cursor: pointer;
   background-color:rgb(47, 47, 47);
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 .spotify-card{
   transition-duration: 0.6s;
