@@ -19,13 +19,13 @@ span{
     display: block;
     text-align: center;
     font-weight: bolder;
-    font-size: 500%;
+    font-size: 400%;
 }
 p{
     display: block;
     text-align: center;
-    font-weight: bolder;
-    font-size: 200%;
+    font-weight: bold;
+    font-size: 150%;
 }
 
 .playGame {
@@ -152,4 +152,16 @@ p{
        max-height: 400px;
        max-width: 500px;
        overflow-y: scroll;
+     }
+  
+     .skip-to-stefano{
+       color:white;
+     }
+     .skip-to-stefano:hover{
+       text-decoration: none;
+       color:white;
+     }
+     #stefano-section{
+      align-items: baseline;
+      text-align: center;
      }
