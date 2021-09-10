@@ -350,6 +350,120 @@
             </div>
           </div>
         </div>
+
+                  <!---messages start-->
+                  <div class="container chat-history">
+                    <div class="chat-log-contain ">
+                
+                    <div class="row  odds">
+                      <div class="col-19 align-items-center indent-left-1"><p>Hey how's the build week going?</p>
+                        <span class="time-right">11:00</span></div>
+                          <div class="col-2 d-flex align-items-center pr-0"><img src="assets/one-punch-man-ok.jpeg" width="40px" height="40px" style="border-radius:50%" > </div>
+                    </div>
+                    
+                    <div class="row evens">
+                      <div class="col-2 d-flex align-items-center px-0"><img src="assets/Bogdan.png" width="40px" style="border-radius:50%" > </div>
+                     <div class="col-10"><p>Hey! not too bad!</p>
+                      <span class="time-left">11:01</span></div>
+          
+                    </div>
+                    
+                    <div class="row odds">
+          
+                     <div class="col-10"><p>That's good , so are you nearly done?</p>
+                    <span class="time-right">11:01</span></div>
+                      <div class="col-2 d-flex align-items-center px-0"><img src="assets/one-punch-man-ok.jpeg" width="40px" height="40px" style="border-radius:50%" > </div>
+                    </div>
+                    
+                    <div class="row justify-content-center align-items-center evens">
+                      <div class="col-2 d-flex align-items-center px-0"><img src="assets/Bogdan.png" width="40px" style="border-radius:50%" > </div>
+                     <div class="col-10"><p>hah! not even close lol</p>
+                      <span class="time-left">11:05</span></div>
+                     
+                    </div>
+                  </div>
+                </div>
+          
+          
+          
+          
+          
+          
+                    <!---messages end-->
+          
+                      <textarea placeholder="Type here.." name="msg" id="textMessageBox" required></textarea>
+                      <div class="d-flex">
+                      <button id="send-message" type="button" class="btn" onclick="sendMessage()"><i class="bi bi-arrow-right-square"></i></button>
+                      
+                      </div> 
+                      <button type="button" class="btn cancel" onclick="closeForm()"><i class="bi bi-x-square"></i></button>
+                  </form>
+                  </div>
+                  <!---chat box functions-->
+                  <script>
+                  function openForm() {
+                    document.getElementById("myForm").style.display = "block";
+                  }
+          
+                  function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+                  }
+          
+                  function sendMessage() {
+                
+          
+                  let newDivRow = document.createElement("div");
+                  newDivRow.classList.add("row");
+                  newDivRow.classList.add("odds");
+          
+                  let newMessageArea = document.createElement("div");
+          
+          
+                  newMessageArea.classList.add("col-10");
+                  let messageText = document.createElement("p");
+                  let messageTime = document.createElement("span");
+                  messageTime.classList.add("time-right")
+          
+          
+                  let newAvatar = document.createElement("div");
+                  newAvatar.classList.add("col-2");
+                  newAvatar.classList.add("align-items-center");
+                  newAvatar.classList.add("d-flex");
+                  newAvatar.classList.add("px-0");
+          
+                  let newImageNode = document.createElement("img");
+          
+                  newImageNode.setAttribute("src", "assets/one-punch-man-ok.jpeg");
+                  newImageNode.setAttribute("width", "40");
+                  newImageNode.setAttribute("height","40");
+                  newImageNode.setAttribute("style","border-radius:50%")
+                  let currentMessage = document.getElementById("textMessageBox").value;
+                  messageText.innerHTML = currentMessage;
+                  messageTime.innerHTML = "now";
+                  newMessageArea.appendChild(messageText);
+                  newMessageArea.appendChild(messageTime);
+                  newDivRow.appendChild(newMessageArea);
+                  newAvatar.appendChild(newImageNode);
+                  newDivRow.appendChild(newAvatar);
+                  document.querySelector("div.container .chat-log-contain").appendChild(newDivRow)
+                  document.getElementById("textMessageBox").value = ""
+                          }
+          
+                  </script>
+                    <!---chat box functions-->
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -363,6 +477,7 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+
     <script>
       /* ------------------------------ */
       function myFunction(x) {
