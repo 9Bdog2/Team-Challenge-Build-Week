@@ -511,6 +511,7 @@ overflow: hidden;
     background-image:url("./assets/spotify_play_btn_hovered.jpg");
   }
 
+
   @keyframes pulse {
     0% {
       background-color: #090316;
