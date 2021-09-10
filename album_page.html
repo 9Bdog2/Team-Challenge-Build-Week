@@ -150,7 +150,7 @@
                 <img src="https://images-na.ssl-images-amazon.com/images/I/71WVq7VqUkL._SL1260_.jpg" class="album_image" width="200" height="200" alt="">
                 <div  class="ml-3 align-self-end">
                   <h6 class="album_title">Album</h6>
-                  <h2 class="album_title"><b>Bohemian Rhapsody(The Original Soundtrack)</b></h2>
+                  <h2 class="album_title"><b>Bohemian Rhapsody(The Original Soundtrack)</b><p id="demo"></p></h2>
                   <div class="d-flex">
                     <img src="./assets/small_profile_picture.jpg" class="profile_picture" width="25" height="25" alt="">
                     <h6 class="ml-1 mr-1 album_title">Queen</h6>
@@ -165,7 +165,7 @@
                   <img src="./assets/spotify_play_btn.jpg" class="profile_picture play_logo" width="50" height="50" alt="">
                   <i class="bi bi-heart ml-3 album_icons " ></i>
                   <i class="bi bi-three-dots ml-3 album_icons"></i>
-                  <div id="div1" class="fa"></div>
+                  <div id="hourglass" class="fa"></div>
                 </div>
               </div>
               <div class="col-12">
@@ -365,13 +365,15 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      /* ------------------------------ */
       function myFunction(x) {
          x.classList.toggle("fa-thumbs-down");
       }
+      /* ------------------------------ */
 
       function hourglass() {
       var a;
-      a = document.getElementById("div1");
+      a = document.getElementById("hourglass");
       a.innerHTML = "&#xf251;";
       setTimeout(function () {
           a.innerHTML = "&#xf252;";
@@ -382,6 +384,40 @@
         }
         hourglass();
         setInterval(hourglass, 3000);
+      /* ------------------------------ */
+
+
+        // Set the date we're counting down to
+        var countDownDate = new Date("September 10, 2021 18:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+
+      /* ------------------------------ */
+
     </script>
   </body>
 </html>
